@@ -1,6 +1,6 @@
 * {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -9,7 +9,9 @@
 ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
 }
 
 form {
@@ -25,14 +27,74 @@ form {
   width: 300px;
   height: 445px;
   margin-bottom: 10px;
-  object-fit: cover;
 }
 
 .card-box {
   cursor: pointer;
-  
+  padding: 15px 30px;
+  margin: 0 auto;
 }
 
 .card-box li {
   margin-left: 5px;
+  max-width: 200px;
+}
+
+.header-box {
+  margin-top: 50px;
+}
+
+.my-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  display: none;
+}
+.my-modal.show {
+  display: flex;
+}
+
+.modal-text {
+  width: 666px;
+  height: 575px;
+  max-width: 666px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.close-btn__modal {
+  transform: translateY(-30px);
+  position: fixed;
+  margin-left: 600px;
+}
+
+.input-name {
+  padding: 0 10px;
+}
+
+.spinner__loading {
+  margin-left: 475px;
+}
+
+.my-modal__spinner:not(.d-none) + div {
+  display: none;
+}
+
+.my-modal__spinner {
+  margin-top: 250px;
+  margin-left: 300px;
+  position: fixed;
+}
+
+.btn-search__icon {
+  padding: 3px 30px !important;
+}
+
+.input-year__movie {
+  padding: 0 10px;
 }
