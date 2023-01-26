@@ -35,11 +35,6 @@ form {
   margin: 0 auto;
 }
 
-.card-box li {
-  margin-left: 5px;
-  max-width: 200px;
-}
-
 .header-box {
   margin-top: 50px;
 }
@@ -78,7 +73,7 @@ form {
 }
 
 .spinner__loading {
-  margin-left: 475px;
+  margin-left: 480px;
 }
 
 .my-modal__spinner:not(.d-none) + div {
@@ -97,4 +92,11 @@ form {
 
 .input-year__movie {
   padding: 0 10px;
+}
+
+.h3-title {
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 250px;
+  margin-left: 5px;
 }

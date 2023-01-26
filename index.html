@@ -29,20 +29,26 @@
           placeholder="Tv Show Name"
           class="input-name w-25"
         />
-        <button type="submit" class="btn btn-primary btn-search__icon">&#128269</button>
-        <input type="number" name="year-movie" placeholder="Year" class="input-year__movie">
-            <select name="type-movie" class="select">
-                <option selected>Tv show type</option>
-                <option value="movie">Movie</option>
-                <option value="series">Series</option>
-                <option value="episode">Episode</option>
-              </select>
+        <input
+          type="number"
+          name="year-movie"
+          placeholder="Year"
+          class="input-year__movie"
+        />
+        <select name="type-movie" class="select">
+          <option selected value="">Tv show type</option>
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
       </form>
       <ul data-ul></ul>
 
-      <nav aria-label="Movie pagination" class="d-flex justify-content-center my-3">
-        <ul data-movie-pagination class="pagination">
-        </ul>
+      <nav
+        aria-label="Movie pagination"
+        class="d-flex justify-content-center my-3"
+      >
+        <ul data-movie-pagination class="pagination"></ul>
       </nav>
       <div class="my-modal" id="test-modal" data-modal>
         <div class="modal-text" data-modal-content>
@@ -50,7 +56,11 @@
             class="btn btn-close mt-2 close-btn__modal"
             data-modal-close
           ></button>
-          <div class="spinner-border text-primary d-none my-modal__spinner" data-spinner role="status">
+          <div
+            class="spinner-border text-primary d-none my-modal__spinner"
+            data-spinner
+            role="status"
+          >
             <span class="visually-hidden">Loading...</span>
           </div>
           <div data-infos>
@@ -74,7 +84,6 @@
       </div>
     </div>
     <script src="./js/omdb.js"></script>
-    <script src="./js/modal.js"></script>
     <!-- <script src="./js/main.js"></script> -->
   </body>
 </html>

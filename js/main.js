@@ -33,12 +33,12 @@
 // }, 3000);
 // console.log("3");
 
-const promise = new Promise((resolve, reject) => {
-  //   setTimeout(() => {
-  //     resolve("resolved");
-  //   }, 300);
-  reject(new Error("xato bo'ldi"));
-});
+// const promise = new Promise((resolve, reject) => {
+//   //   setTimeout(() => {
+//   //     resolve("resolved");
+//   //   }, 300);
+//   reject(new Error("xato bo'ldi"));
+// });
 
 // promise
 //   .then((value) => {
@@ -47,27 +47,27 @@ const promise = new Promise((resolve, reject) => {
 //   .catch((err) => console.log(err))
 //   .finally(() => console.log("finally"));
 
-console.log("something");
+// console.log("something");
 
-async function getPromise(params) {
-  try {
-    const data = await promise;
-    console.log(data);
-  } catch (err) {
-    console.log(err.toString());
-  } finally {
-    console.log("finally");
-  }
-}
+// async function getPromise(params) {
+//   try {
+//     const data = await promise;
+//     console.log(data);
+//   } catch (err) {
+//     console.log(err.toString());
+//   } finally {
+//     console.log("finally");
+//   }
+// }
 
 // const fetchData = fetch("https://cat-fact.herokuapp.com/facts").then(data => console.log(data));
 const elUl = document.querySelector("[data-ul]");
-// const fetchData = fetch("https://cat-fact.herokuapp.com/facts").then((res) =>
-//   res
-//     .json()
-//     .then((data) => renderFacts(data))
-//     .catch((err) => renderError(err))
-// );
+const fetchData = fetch("https://cat-fact.herokuapp.com/facts").then((res) =>
+  res
+    .json()
+    .then((data) => renderFacts(data))
+    .catch((err) => renderError(err))
+);
 
 async function getFacts() {
   try {
